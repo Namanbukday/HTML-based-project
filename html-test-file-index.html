@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+    <!-- USING CSS CLASS FOR STYLING -->
+    <style>
+      .blue-text {
+        color:blue;
+        font-family: Lobster,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      }
+      .lobster-font{
+        font-family: Lobster,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      }
+      .larger-image{
+          /* TO CHANGE THE SIZE OF THE IMAGE USING "WIDTH" PROPERTY*/
+        width: 500px;
+      }
+      p{
+        font-size: 16px;
+        font-family: Lobster,'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      }
+      .thick-border{
+        border-width: 5px;
+        border-color: darkmagenta;
+        border-style: solid;
+        /* border-radius: 10px; THIS WILL CURVE THE BORDER*/
+        border-radius: 50%; /* THIS WILL CURVE THE WHOLE IMAGE INCLUDING BORDER*/
+      }
+      .silver-background{
+        background-color:cadetblue;
+      }
+      #photo-form{ /* USING "ID" TO STYLE A PARTICULAR ELEMENT */
+        background-color: cadetblue;
+      }
+      /* .box{
+        border-color: crimson;
+        border-width: 20px;
+        border-radius: 10%;
+        border-style: solid;
+        background-color: blue;
+      } */
+      .paddings{
+        padding: 50px;
+      }
+      div{
+        padding:50px;
+        margin: 70px;
+      }
+      form{
+        padding:50px;
+        margin: 70px;
+      }
+      .margins{
+        margin: 70px;
+      }
+      [type="checkbox"]{
+        margin-top: 10px;
+        margin-bottom: 15px;
+      }
+
+    </style>
+    <!-- INLINE CSS
+      <h1 style="color:cornflowerblue;"> PhotoApp</h1>
+     -->
+
+    <!-- CSS SELECTOR STYLING 
+      <style>
+      h1{
+        color:cornflowerblue;
+      }
+    </style> -->
+    <title class="blue-text">First html file</title>
+    <h1 class="blue-text paddings">PhotoApp</h1>
+    <!-- <h5 class="box">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</h5> -->
+  </head>
+  <body>
+    <main>
+      <div class="silver-background paddings margins">
+        <a href="#" target="blank"><p>Select a photograph and save it on cloud. Have a nice day!!</p></a>
+        <!-- INNER REFERENCING USINF A HREF "#" AND ID -->
+        <p>Some pics</p>
+        <p id="p2">Some good, some bad</p>
+      </div>
+      <!-- adding multiple classes in a element -->
+      <img class="larger-image thick-border" src="images/ship.bmp" /> 
+      <form id = "photo-form" action="" class="lobster-font">
+        <label for="f1">First field</label>
+        <input type="text" id="f1" required placeholder="cat photos URL" />
+        <br />
+        <br />
+
+        <label for="indoor">
+          <input type="radio" value="indoor" checked id="indoor" name="indoor-outdoor" />indoor
+        </label>
+
+        <label for="outdoor">
+          <input type="radio" value="outdoor" id="outdoor" name="indoor-outdoor"/>outdoor
+        </label>
+
+        <br />
+
+        <label for="loving">
+          <input id="Angry" value="Angry" type="checkbox" name="personality" checked> Angry</label>
+        <label for="lazy">
+          <input id="More Anger" value="More Anger" type="checkbox" name="personality"> More Anger</label>
+        <label for="energetic">
+          <input id="Destruction" value="Destruction" type="checkbox" name="personality"> Destruction</label><br>
+        <br />
+
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>
